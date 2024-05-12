@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fine Management System</title>
+    <link rel="stylesheet" href="fines.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Fine Management System</h1>
+        <div class="input-group">
+            <label for="daysOverdue">Days Overdue:</label>
+            <input type="number" id="daysOverdue" min="0">
+        </div>
+        <div class="input-group">
+            <button onclick="calculateFine()">Calculate Fine</button>
+        </div>
+        <div class="result">
+            <p id="fineAmount">Fine Amount: </p>
+        </div>
+    </div>
+    
+    <script src="fine.js"></script>
+</body>
+</html>
